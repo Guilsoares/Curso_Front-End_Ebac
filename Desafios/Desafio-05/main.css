@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #182b61;
+    color: #ecf0f1;
+}
+
+header h1{
+    font-family: bungee, roboto;
+    font-weight: Normal;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    font-family: bungee, cursive;
+    font-weight: normal;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: #182b61;
+    font-size: 24px;
+    font-family: bungee, cursive;
+    font-weight: normal;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list p{
+    font-family: roboto, cursive;
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{
+    align-items: flex-start ;
+}
+
+section{
+    padding: 24px 0;
+    color: #182C61;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;
+}
+
+#contact .container{
+    display:block;
+    padding: 0px 16px;
+}
+
+.contact-methods h3,
+.social-media h3,
+.venha h3{
+    font-family: bungee, cursive;
+    font-weight: normal;
+}
+
+.contact-methods{
+    display: inline-block;
+    justify-content: space-between;
+    padding: 16px auto;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #314e9e;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182C61;
+}
+
+.social-media img{
+    height: 24px;
+}
+
+.social-media li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-media li a{
+    text-decoration: none;
+}
+
+#Rodape{
+    background-color: #182b61;
+    padding: 16px 0;
+    color: #ecf0f1;
+    font-family: roboto, cursive;
+}
+
+.venha p{
+    font-family: roboto, cursive;
+}
+
+input, textarea{
+    font-family: roboto, cursive;
+}
+
+button{
+    font-family: bungee;
+    font-weight: normal ;
+}
+
+
