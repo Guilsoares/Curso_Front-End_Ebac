@@ -1,3 +1,6 @@
+/* ------------------------------------------------------- CONFIGURAÇÕES INICIAIS ---------------------------------------------------------------------------------*/
+
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -12,6 +15,9 @@
     box-sizing: border-box;
     font-family: var(--fontPadrao);
 }
+
+/* ------------------------------------------------------- CONFIGURAÇÕES HEADER ---------------------------------------------------------------------------------*/
+
 
 .container{
     max-width: 1024px;
@@ -28,6 +34,7 @@ header .container{
 header{
     padding: 10px 0 0;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
 }
 
 .submenu{
@@ -36,6 +43,7 @@ header{
     left: 0;
     width: 300px;
     top: 51.3px;
+    background-color: #fff;
 }
 .menu > li{
     float: left;
@@ -62,4 +70,48 @@ header{
 .submenu li{
     display: block;
     padding: 8px;
+}
+
+/* ------------------------------------------------------- CONFIGURAÇÕES CONTEUDO PRINCIAPAL -------------------------------------------------------------------------*/
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.noticia img{
+    max-width: 100%;
+}
+
+.destaque{
+    margin-bottom: 66px;
+}
+
+.destaque .noticia a{
+    display: flex;
+    font-size: 2em;
+}
+
+.destaque .noticia img{
+    margin-right: 8px;
+}
+
+section h2{
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+aside{
+    padding-left: 40px;
+}
+
+aside .noticia{
+    margin-bottom: 24px;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
 }
