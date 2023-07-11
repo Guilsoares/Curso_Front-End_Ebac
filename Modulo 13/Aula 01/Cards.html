@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Cards</title>
+    <link rel="stylesheet" href="/Modulo 13/Aula 01/library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <style>
+        .card{
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card img{
+            border-radius: 5px;
+        }
+        .card-img-overlay{
+            transition: .5s;
+        }
+        .card-img-overlay:hover{
+            background: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bootstrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <header class="card-header">
+                        Cabeçalho Header
+                    </header>
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/76/13/06/1000_F_476130677_rmj6GhzzUpQbINZSJkNCMlNoQaOrBllE.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do Card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Clique Aqui</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="https://as1.ftcdn.net/v2/jpg/03/92/44/16/1000_F_392441609_8968izrCYzQXaLw7gDjpOsjh1t2opf5n.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Titulo do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do Card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Clique Aqui</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Cabeçalho Header
+                    </div>
+                    <img src="https://as2.ftcdn.net/v2/jpg/03/14/68/33/1000_F_314683358_oLKiWFq2GkFEGJzwWWMqyGuS9GyES2C6.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do Card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Clique Aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <script src="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
