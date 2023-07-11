@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Carrousel</title>
+    <link rel="stylesheet" href="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <style>
+
+        .carousel{
+            max-width: 800px;
+        }
+
+        .carousel-item  img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel-example" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="slide">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://as1.ftcdn.net/v2/jpg/03/92/44/16/1000_F_392441609_8968izrCYzQXaLw7gDjpOsjh1t2opf5n.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/76/13/06/1000_F_476130677_rmj6GhzzUpQbINZSJkNCMlNoQaOrBllE.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://as2.ftcdn.net/v2/jpg/03/14/68/33/1000_F_314683358_oLKiWFq2GkFEGJzwWWMqyGuS9GyES2C6.jpg" alt="">
+                </div>
+                <button data-bs-target="#carousel-example" class="carousel-control-prev" data-bs-slide="prev" type="button" >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-example" class="carousel-control-next" data-bs-slide="next" type="button" >
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-example" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+    <script src="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
