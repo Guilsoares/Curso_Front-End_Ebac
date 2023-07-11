@@ -7,27 +7,95 @@
     <link rel="stylesheet" href="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
     <style>
 
+        header{
+            background-color: yellowgreen;
+            border-bottom: 2px solid darkgreen;
+            box-shadow: 2px 2px 2px 1px rgba(0, 128, 0, 0.5);
+
+        }
+
+        .container{
+            max-width: 1024px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            height: 100px;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: inline;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        ul > li{
+            margin: 10px;
+            list-style: none;
+        }
+
+        div.container > h1{
+            width: 100%;
+        }
+
+
         .carousel{
-            max-width: 800px;
+            
+            margin: 2% auto 0;
+            max-width: 400px;
         }
 
         .carousel-item  img{
             width: 100%;
+            border-radius: 50%;
         }
+        .quem-sou{
+            width: 1000px;
+            margin: 2% auto 0;
+        }
+        
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>GS</h1>
+        </div>
+        <nav class="container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Apresentação</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+
+    </header>
     <div id="carousel-example" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="slide">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
                     <img src="https://as1.ftcdn.net/v2/jpg/03/92/44/16/1000_F_392441609_8968izrCYzQXaLw7gDjpOsjh1t2opf5n.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h5>Foto Melancia</h5>
+                    </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
                     <img src="https://as1.ftcdn.net/v2/jpg/04/76/13/06/1000_F_476130677_rmj6GhzzUpQbINZSJkNCMlNoQaOrBllE.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h5>Foto Limão</h5>
+                    </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
                     <img src="https://as2.ftcdn.net/v2/jpg/03/14/68/33/1000_F_314683358_oLKiWFq2GkFEGJzwWWMqyGuS9GyES2C6.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h5>Foto Abacate</h5>
+                    </div>
                 </div>
                 <button data-bs-target="#carousel-example" class="carousel-control-prev" data-bs-slide="prev" type="button" >
                     <span class="carousel-control-prev-icon"></span>
@@ -42,7 +110,10 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="quem-sou">
+        <h1>Prazer, Guilherme Soares</h1>
+        <h2>Desenvolvedor Front-End</h2>
     </div>
 
 
