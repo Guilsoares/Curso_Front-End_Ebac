@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap-Modal</title>
+    <link rel="stylesheet" href="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+</head>
+<body>
+    <h1>Bootstrap-modal</h1>
+    <button data-bs-toggle="modal" data-bs-target="#example-modal" class="btn btn-success">
+        Abrir Modal
+    </button>
+
+    <div class="modal" id="example-modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Titulo Modal</h5>
+                    <button data-bs-dismiss="modal" class="btn btn-close" type="button"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates nemo ipsa hic </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+
+
+    <!-- Carregando a Modal através do JS, após o carregamento da página-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const modalExemplo = new bootstrap.Modal('#example-modal');
+            setTimeout(function(){
+                modalExemplo.show()
+            },3000)
+        })
+    </script>
+</body>
+</html>
