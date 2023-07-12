@@ -48,8 +48,8 @@
                 </ul>
             </nav>
             </div>
+            <button type="button" class="btn btn-warning" id="checar-msg">Checar Messangens</button>
         </div>
-
     </header>
     <main data-bs-spy="scroll">
         <section id="inicio">
@@ -84,9 +84,35 @@
         </section>
     </main>
 
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="alertas">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                <p>Você possui X mensagens</p>
+                <div>
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">Descatar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
 
 
     <script src="library/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+
+    <script>
+        const ativadorToast = document.getElementById('checar-msg');
+        const mensagens = document.getElementById('alertas')
+        if(ativadorToast){
+            ativadorToast.addEventListener('click', function(){
+                const toast = new bootstrap.Toast(mensagens)
+                toast.show()
+            })
+        }
+
+    </script>
 </body>
 </html>
