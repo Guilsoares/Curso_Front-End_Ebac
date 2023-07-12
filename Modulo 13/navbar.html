@@ -16,9 +16,14 @@
         section{
             height: 100vh;
             background-color: rgb(241, 241, 241);
-            color: #fff;
+            color: gray;
             padding: 70px;
         }
+
+        section > h1{
+            border: 1px solid darkgrey;
+        }
+
         header{
             position: sticky;
             top: 0;
@@ -29,7 +34,7 @@
     </style>
 </head>
 <body>
-    <header id="cabeca">
+    <header >
         <div class="navbar navbar-expand-lg">
             <div class="container">
             <h1>Bootstrap - Navbar</h1>
@@ -46,12 +51,30 @@
         </div>
 
     </header>
-    <main data-bs-spy="scroll" data-bs-target="cabeca">
+    <main data-bs-spy="scroll">
         <section id="inicio">
             <h2>Inicio</h2>
         </section>
         <section id="produto">
             <h2>Produtos</h2>
+            <div class="container">
+                <div class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#elec" type="button" class="nav-link active">Eletronico</button>
+                    <button data-bs-toggle="tab" data-bs-target="#cmm" type="button" class="nav-link">Moda Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#cmf" type="button" class="nav-link">Moda Feminina</button>
+                </div>
+                <div  class="tab-content">
+                    <div id="elec" class="tab-pane active">
+                        Conteudo Tab Eletronicos
+                    </div>
+                    <div id="cmm" class="tab-pane">
+                        Conteudo Tab Moda Masculina
+                    </div>
+                    <div id="cmf" class="tab-pane">
+                        Conteudo Tab Moda Feminina
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="promocao">
             <h2>Promoção</h2>
