@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital@0;1&display=swap');
+
+:root{
+    --cor01:#e15f41;
+    --cor02: #ffeae6;
+    --font01:'Pacifico', cursive;
+    --font02: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: var(--font02);
+}
+
+.navbar{
+    background-color: var(--cor01)
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #fff;
+    color: var(--cor01);
+    
+}
+
+
+
+#cabecalho .nav .nav-link,
+#cabecalho .navbar-brand,
+#cabecalho .navbar-brand:hover{
+    color: #fff;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.navbar-toggler{
+    background-color: var(--cor02);
+
+}
+.section-title{
+    font-family: var(--font01);
+}
+
+
+
+#sobre-o-restaurante,
+#nosso-cardapio{
+    background-color: var(--cor02);
+}
+
+.text-colored{
+    color: var(--cor01);
+}
+
+#contato button,
+.nav-cardapio .nav-link.active,
+.nav-cardapio .nav-link.active:hover{
+    background-color: var(--cor01);
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover{
+    color: var(--cor01);
+}
+
+.social-link li{
+    list-style: none;
+    display: inline;
+
+}
+
+.social-link li a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+    
+}
+
