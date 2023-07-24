@@ -1,0 +1,89 @@
+@use "config/reset";
+@use "config/variaveis";
+@use "sass:math";
+
+@mixin formElement(){
+    padding: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+@function pxToem($alvoPX, $contextoPX: 16px){
+    @return math.div($alvoPX, $contextoPX)+em
+}
+
+body{
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 16px 0;
+    background-color: variaveis.$corPrincipal;
+    color: #fff;
+    text-align: center;
+}
+
+.form-container{
+    height: calc(100vh - 70.4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 760px;
+
+
+    h2{
+        font-size: pxToem(48px, );
+        text-align: center;
+    }
+
+    form{
+        width: 100%;
+        max-width: 480px;
+        margin-top: 40px;
+
+        input{
+            @include formElement();
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid variaveis.$corPrincipal;
+
+
+        }
+
+        button{
+            @include formElement();
+            background-color: variaveis.$corSecundaria;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: .5s;
+
+
+            &:hover{
+                background-color: darken(variaveis.$corSecundaria, 20%);
+            }
+        }
+
+        label{
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .container{
+        max-width: 80%;
+    }
+}
