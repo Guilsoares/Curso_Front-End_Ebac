@@ -1,0 +1,24 @@
+@use "config/reset";
+@use "cores/cores";
+
+
+
+body{
+    background-color: cores.$corSecundaria;
+    h1{
+        color: cores.$corPrincipal;
+    }
+
+}
+
+input{
+    background-color: cores.$corPrincipal;
+    border-radius: 3px;
+    color: cores.$corSecundaria;
+
+    &:hover{
+        background-color: green;
+        cursor: pointer;
+    }
+}
+
