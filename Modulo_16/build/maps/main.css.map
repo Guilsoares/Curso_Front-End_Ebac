@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAEA,KACI,sBACA","file":"../main.css","sourcesContent":["@use \"vars\";\r\n\r\nbody{\r\n    background-color: black;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}"]}
