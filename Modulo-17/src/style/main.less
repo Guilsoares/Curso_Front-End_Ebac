@@ -1,0 +1,110 @@
+@import "variaveis.less";
+@import "maps.less";
+@breakmobile:~"(max-width: 767px)";
+@breaktablet:~"(min-width: 768px) and (max-width: 1023px)";
+
+.marginbottom8{
+    margin-bottom: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #colors[corFundo];
+    color: @corText;  
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @breakmobile{
+        max-width: 70%;
+    }
+
+    @media @breaktablet{
+        max-width: 90%;
+    }
+}
+
+header{
+    padding: 24px;
+
+    .bio-picture{
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 24px;
+    }
+    
+}
+
+.bio{
+    text-align: center;
+    &-name{
+        font-size: 16px;
+        .marginbottom8()
+
+    }
+
+    &-subtitle{
+        font-size: 14px;
+        .marginbottom8()
+    }
+
+    &-description{
+        font-size: 14px;
+        opacity: 0.7;
+    }
+}
+
+.social-links{
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto 8px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+
+    &-item{
+        img{
+            transition: all ease .3s;
+            &:hover{
+                transform: scale(1.4);
+
+            }
+        }
+    }
+}
+
+.portfolio{
+    list-style: none;
+    display: block;
+    text-align: center;
+    li{
+        background-color: #colors[corButton];
+        margin-bottom: 8px;
+        padding: 15px;
+        border-radius: 30px;
+        border: solid 3px #colors[corButton];
+
+        &:hover{
+            background-color: transparent;
+            cursor: pointer;
+            transition: .5s;
+            color: #colors[corButton];
+        }
+
+    }
+    &-item{
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+}
