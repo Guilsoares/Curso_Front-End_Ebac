@@ -1,0 +1,8 @@
+body {
+  background-color: black;
+  color: red;
+}
+body main {
+  max-width: 380px;
+  width: 100%;
+}
